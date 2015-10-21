@@ -116,7 +116,7 @@ chkHaskTags = do
   ht <- io $ findExecutable "hasktags"
   case ht of
     Just p -> return ()
-    Nothing -> error "You must have hasktags installed Run 'stack install hasktags'."
+    Nothing -> error "You must have hasktags installed. Run 'stack install hasktags'."
 
 --- | Check whether the current version of stack
 -- is compatible by trying to run `stack list-depenencies --help`.
